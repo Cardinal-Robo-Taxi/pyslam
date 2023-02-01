@@ -21,23 +21,23 @@ import numpy as np
 import cv2
 import math
 
-from config import Config
+from .config import Config
 
-from visual_odometry import VisualOdometry
-from camera  import PinholeCamera
-from ground_truth import groundtruth_factory
-from dataset import dataset_factory
+from .visual_odometry import VisualOdometry
+from .camera  import PinholeCamera
+from .ground_truth import groundtruth_factory
+from .dataset import dataset_factory
 
 #from mplot3d import Mplot3d
 #from mplot2d import Mplot2d
-from mplot_thread import Mplot2d, Mplot3d
+from .mplot_thread import Mplot2d, Mplot3d
 
 from .feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
 from .feature_manager import feature_manager_factory
 from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
 from .feature_matcher import feature_matcher_factory, FeatureMatcherTypes
 
-from feature_tracker_configs import FeatureTrackerConfigs
+from .feature_tracker_configs import FeatureTrackerConfigs
 
 
 
